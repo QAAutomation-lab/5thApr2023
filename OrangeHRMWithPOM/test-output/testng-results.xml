@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-26T03:18:10Z" name="Suite" finished-at="2023-07-26T03:19:08Z" duration-ms="58216">
+    <groups>
+    </groups>
+    <test started-at="2023-07-26T03:18:10Z" name="Test" finished-at="2023-07-26T03:19:08Z" duration-ms="58216">
+      <class name="testscripts.TestOrangeHrmPim">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:testscripts.TestOrangeHrmPim@3de8f619]" started-at="2023-07-26T03:18:10Z" name="precondition" finished-at="2023-07-26T03:18:22Z" duration-ms="11677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="testPimCreation()[pri:0, instance:testscripts.TestOrangeHrmPim@3de8f619]" started-at="2023-07-26T03:18:22Z" name="testPimCreation" finished-at="2023-07-26T03:18:35Z" duration-ms="12680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPimCreation -->
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:testscripts.TestOrangeHrmPim@3de8f619]" started-at="2023-07-26T03:18:35Z" name="postcondition" finished-at="2023-07-26T03:18:36Z" duration-ms="1666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+        <test-method is-config="true" signature="precondition()[pri:0, instance:testscripts.TestOrangeHrmPim@3de8f619]" started-at="2023-07-26T03:18:36Z" name="precondition" finished-at="2023-07-26T03:18:54Z" duration-ms="17713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="testPimDeletion()[pri:0, instance:testscripts.TestOrangeHrmPim@3de8f619]" started-at="2023-07-26T03:18:54Z" name="testPimDeletion" finished-at="2023-07-26T03:19:06Z" depends-on-methods="testscripts.TestOrangeHrmPim.testPimCreation" duration-ms="12164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPimDeletion -->
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:testscripts.TestOrangeHrmPim@3de8f619]" started-at="2023-07-26T03:19:06Z" name="postcondition" finished-at="2023-07-26T03:19:08Z" duration-ms="2271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- testscripts.TestOrangeHrmPim -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
