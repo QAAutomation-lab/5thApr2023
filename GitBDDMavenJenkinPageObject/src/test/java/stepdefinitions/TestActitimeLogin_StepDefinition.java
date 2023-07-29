@@ -39,7 +39,6 @@ public class TestActitimeLogin_StepDefinition extends SeleniumUtility{
 	    public void clicks_on_login_button()  {
 	    	clickOnElement(driver.findElement(By.id("loginButton")));
 	    }
-
 	    @And("^close the browser$")
 	    public void close_the_browser()  {
 	        cleanUp();

@@ -1,12 +1,12 @@
 package stepdefinitions;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import junit.framework.Assert;
 import utilities.SeleniumUtility;
 
 public class TestActitimeLoginFunctionality_StepDef extends SeleniumUtility {

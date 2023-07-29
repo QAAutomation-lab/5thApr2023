@@ -1,5 +1,5 @@
 Feature: testing Actitime login page/funcationality
-
+@SmokeTest
 Scenario: test login page with valid test data
 Given user has already valid url for actitime application
 And user has opeded browser with url for actitime application

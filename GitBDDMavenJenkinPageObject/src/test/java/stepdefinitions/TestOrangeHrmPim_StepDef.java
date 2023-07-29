@@ -14,7 +14,6 @@ import webpages.OrangeHRM_LoginPage;
 import webpages.OrangeHRM_PersonalDetailsPage;
 import webpages.OrangeHRM_PimHomePage;
 public class TestOrangeHrmPim_StepDef extends SeleniumUtility{
-		
 	OrangeHRM_LoginPage getOrangeHRM_LoginPage;
 	OrangeHRM_HomePage getOrangeHRM_HomePage;
 	OrangeHRM_AddEmployeePage getOrangeHRM_AddEmployeePage;
@@ -47,6 +46,7 @@ public class TestOrangeHrmPim_StepDef extends SeleniumUtility{
 
 	    @Then("^user should be able to search newly added employee$")
 	    public void user_should_be_able_to_search_newly_added_employee()  {
+	    	setSleepTime(2000);
 	    	String acutalMsg=getOrangeHRM_PimHomePage.getSearchResultMsg();
 	    	String expectedMsg="(1) Record Found";
 			Assert.assertEquals(acutalMsg, expectedMsg);
@@ -84,5 +84,8 @@ public class TestOrangeHrmPim_StepDef extends SeleniumUtility{
 	    	getOrangeHRM_PimHomePage.confirmDeletion();
 	    }
 	    
-	    
+	    @And("^close the browser for OrangeHRM$")
+	    public void close_the_browser() {
+	    	cleanUp();
+	    }
 }

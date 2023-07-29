@@ -1,5 +1,6 @@
 package webpages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,9 +46,11 @@ public class OrangeHRM_PimHomePage extends SeleniumUtility {
 	
 	//Function: search employee
 	public void searchCreatedEmployee(int employeeId) {
-		typeInput(employeeIdInputField, String.valueOf(employeeId));
-		clickOnElement(searchButtonOnPimPage);
 		setSleepTime(2000);
+		employeeIdInputField.sendKeys(Keys.chord(Keys.CONTROL,"a",Keys.BACK_SPACE));
+		typeInput(employeeIdInputField, String.valueOf(employeeId));
+		setSleepTime(2000);
+		clickOnElement(searchButtonOnPimPage);
 	}
 	
 	//Function: getSearchResultMsg
